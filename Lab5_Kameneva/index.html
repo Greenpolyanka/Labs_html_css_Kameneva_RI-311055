@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        .animate {
+            border-radius: 10px;
+            text-align: center;
+            line-height: 60px;
+            padding: 0px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 7px 10px rgba(70,70,221);
+            position: relative;
+            transition-property: background-color, color;
+            transition-duration: 2s, 2s;
+            
+        }
+
+        .animate:hover {
+            background: rgb(228, 224, 220);
+            box-shadow: 0 4px 10px rgb(177, 111, 111);
+            top: 3px;
+        }
+
+        #div1 {
+            width: 250px;
+            height: 250px;
+            background-color: white;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                background-color: white;
+            }
+
+            50% {
+                background-color: rgb(137, 222, 237);
+            }
+
+            100% {
+                background-color: white;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img class="logo animate__animated animate__wobble" src="img/logo.png" alt="pic" />
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title">С помощью нас <br> вы сможете
+                        создать то, о чем</h1>
+                    <span class="title_span animate__animated animate__flash">желаете</span>
+                    <p class="offer_text">Наши возможности + опыт
+                        позволят Вам достичь огромного успеха. Мы верим
+                        в вас! И знаем это на все 100%. Вас не остановить!</p>
+                    <a href="#" class="btn animate">Узнать больше...</a>
+                </div>
+                <img class="header_img animate__animated animate__fadeInRight" src="img/header-img.png" alt="pic">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <h2 class="main_title">Что Вам необходимо?</h2>
+            <div class="main_block">
+                <div id="div1" class="main_blocks">
+                    <img src="img/f3.png" alt="pic">
+                    <h3>Первый блок</h3>
+                    <p class="main_pcol">Текст текст текст текст текст</p>
+                </div>
+                <div id="div1" class="main_blocks">
+                    <img id="div2" src="img/f4.png" alt="pic">
+                    <h3>Второй блок</h3>
+                    <p class="main_pcol">Текст текст текст текст текст</p>
+                </div>
+                <div id="div1" class="main_blocks ">
+                    <img src="img/f5.png" alt="pic">
+                    <h3>Третий блок</h3>
+                    <p class="main_pcol">Текст текст текст текст текст</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="forma">
+        <div class="container">
+            <h2 class="forma_title">Форма заказа обратного звонка</h2>
+            <div class="forma_block">
+                <form action="#" method="POST" enctype="multipart/form-data"></form>
+                <div class="forma_blocks">
+                    <input type="text" name="name" id="" placeholder="Имя">
+                </div>
+                <div class="forma_blocks">
+                    <input type="text" name="email" id="" placeholder="Введите свой Email">
+                </div>
+                <div class="forma_blocks">
+                    <input type="text" name="tel" id="tel" placeholder="Телефон">
+                </div>
+                <div class="forma_blocks">
+                    <input type="text" name="" id="" placeholder="Какая тема Вас интересует?">
+                </div>
+                <div class="forma_blocks">
+                    <button class="animate" type="Submit">Отправить вопрос!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="foo">
+        <div class="container">
+            <footer class="foo_title">Ⓒ Все на этом сайте защищено</footer>
+        </div>
+    </section>
+</body>
+
+</html>
